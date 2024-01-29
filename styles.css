@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(4, 48, 193, 0.995);
+  background: linear-gradient(90deg, #00dbde 10%, #fc00ff 100%);
+  color: rgb(0, 0, 0);
+  font-size: small;
+}
+
+.temperature-converter {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  min-width: 300px;
+  padding: 20px 45px 50px;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px 5px;
+}
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+}
+.temp-field {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.result-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 25px;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid;
+  width: 75px;
+}
+.value {
+  transition: all 0.45s ease;
+  border-bottom: 20x solid;
+  padding: 5px;
+}
+.result-type {
+  display: flex;
+  flex-direction: column;
+  height: 1.3cm;
+}
+
+input:focus {
+  border: 1px solid #000000;
+}
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
